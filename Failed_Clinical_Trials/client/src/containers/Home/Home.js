@@ -6,8 +6,9 @@ import { articlesSelector } from "../../selectors/articlesSelector";
 import { articlesLoadingSelector } from "../../selectors/articlesLoadingSelector";
 import Articles from "../../components/Articles/Articles";
 import Pagination from "../../components/Pagination/Pagination";
+import { searchValueSelector } from "../../selectors/searchValueSelector";
 
-const Home = ({ articles, articlesLoading }) => {
+const Home = ({ articles, articlesLoading, searchValue }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [articlesPerPage] = useState(10);
   const dispatch = useDispatch();
@@ -17,9 +18,12 @@ const Home = ({ articles, articlesLoading }) => {
 
   const indexOfLastArticle = currentPage * articlesPerPage;
   const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
-  const currentArticles = articles.slice(indexOfFirstArticle, indexOfLastArticle);
-  const paginate = (pageNumber) => {
-      setCurrentPage(pageNumber);
+  const currentArticles = articles.slice(
+    indexOfFirstArticle,
+    indexOfLastArticle
+  );
+  const paginate = pageNumber => {
+    setCurrentPage(pageNumber);
   };
   return (
     <div className="container">
@@ -29,8 +33,16 @@ const Home = ({ articles, articlesLoading }) => {
       </div>
       <br />
       <div>
-        <Articles articles={currentArticles} articlesLoading={articlesLoading}/>
-        <Pagination articlesPerPage={articlesPerPage} totalArticles={articles.length} paginate={paginate}/>
+        <Articles
+          articles={currentArticles}
+          articlesLoading={articlesLoading}
+          searchValue={searchValue}
+        />
+        <Pagination
+          articlesPerPage={articlesPerPage}
+          totalArticles={articles.length}
+          paginate={paginate}
+        />
       </div>
     </div>
   );
@@ -38,7 +50,8 @@ const Home = ({ articles, articlesLoading }) => {
 
 const mapStateToProps = state => ({
   articles: articlesSelector(state),
-  articlesLoading: articlesLoadingSelector(state)
+  articlesLoading: articlesLoadingSelector(state),
+  searchValue: searchValueSelector(state)
 });
 
 export default connect(mapStateToProps)(Home);

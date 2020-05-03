@@ -1,6 +1,7 @@
 import {GET_ALL_ARTICLES} from "./actionTypes";
 import {GET_ALL_ARTICLES_FAILED} from "./actionTypes";
 import {GET_ALL_ARTICLES_SUCCESS} from "./actionTypes";
+import {SEARCH_VALUE} from "./actionTypes";
 import axios from 'axios';
 
 const getArticlesAction = () => {
@@ -20,6 +21,12 @@ const getArticlesSuccessAction = articles => {
         payload: articles
     };
 };
+export const searchValueAction = value => {
+    return {
+        type: SEARCH_VALUE,
+        payload: value
+    };
+};
 
 export const getArticlesAsync = () => {
     return function(dispatch) {
@@ -31,7 +38,7 @@ export const getArticlesAsync = () => {
                     dispatch(
                         getArticlesSuccessAction(response.data.data)
                     );
-                }, 2000);
+                }, 1000);
             })
             .catch(error => {
                 console.error("Error while getting data: ", error);

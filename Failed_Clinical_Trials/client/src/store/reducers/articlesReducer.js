@@ -1,7 +1,8 @@
 import * as actionTypes from '../actions/actionTypes';
 
 const initialState = {
-    articlesLoading: false
+    articlesLoading: false,
+    searchValue: ''
 };
 
 const reducer = (state = initialState, action) => {
@@ -14,6 +15,11 @@ const reducer = (state = initialState, action) => {
             case actionTypes.GET_ALL_ARTICLES:
             return {
                 articlesLoading: true
+            };
+        case actionTypes.SEARCH_VALUE:
+            return {
+                ...state,
+                searchValue: action.payload
             };
         default:
             return state;

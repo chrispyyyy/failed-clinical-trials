@@ -1,8 +1,10 @@
 import React from "react";
 import "./Article.css";
 import Loader from "react-loader-spinner";
+import Article from "../Article/Article";
+import Search from "../Search/Search";
 
-const Articles = ({ articles, articlesLoading }) => {
+const Articles = ({ articles, articlesLoading, searchValue }) => {
    if(articlesLoading) {
        return <div style={{ marginLeft: 500 }}>
            <Loader
@@ -16,12 +18,11 @@ const Articles = ({ articles, articlesLoading }) => {
    }
    return (
        <div>
+           <Search articles={articles} searchValue={searchValue}/>
            {articles.length > 0 &&
            articles.map(article => {
                return (
-                   <section className="jumbotron" key={article._id}>
-                       <div className="Articles">{article.medicinalProduct}</div>
-                   </section>
+                   <Article article={article}/>
                );
            })}
        </div>
