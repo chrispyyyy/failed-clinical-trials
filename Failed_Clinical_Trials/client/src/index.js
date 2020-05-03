@@ -21,9 +21,7 @@ const store = createStore(rootReducer,  composeWithDevTools(applyMiddleware(thun
 
 const app = (
     <Provider store={store}>
-        <Router>
             <App />
-        </Router>
     </Provider>
 );
 

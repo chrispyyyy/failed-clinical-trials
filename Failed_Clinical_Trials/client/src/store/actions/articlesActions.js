@@ -25,7 +25,7 @@ export const getArticlesAsync = () => {
     return function(dispatch) {
         dispatch(getArticlesAction());
         axios
-            .get('http://localhost:4000/', )
+            .get('/failed-clinical-trials', )
             .then(response => {
                 setTimeout(() => {
                     dispatch(

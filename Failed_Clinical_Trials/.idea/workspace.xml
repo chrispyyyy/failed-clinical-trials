@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ee69624-d52a-4951-bf8c-ab59e5bed22a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/actions/articlesActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/actions/articlesActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/articlesRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/articlesRoute.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +62,7 @@
       <updated>1588328890279</updated>
       <workItem from="1588328892137" duration="6401000" />
       <workItem from="1588499830333" duration="4033000" />
-      <workItem from="1588505180616" duration="11406000" />
+      <workItem from="1588505180616" duration="12589000" />
     </task>
     <task id="LOCAL-00001" summary="Add pagination">
       <created>1588511349694</created>
@@ -110,11 +113,28 @@
       <option name="project" value="LOCAL" />
       <updated>1588516686924</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="heroku test 4">
+      <created>1588517425046</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588517425046</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add pagination" />
@@ -124,7 +144,8 @@
     <MESSAGE value="heroku test" />
     <MESSAGE value="heroku test 2" />
     <MESSAGE value="heroku test 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="heroku test 3" />
+    <MESSAGE value="heroku test 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="heroku test 4" />
   </component>
   <component name="WindowStateProjectService">
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588331841546">
@@ -132,10 +153,10 @@
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588331841546" />
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-2560.60.2560.983@0.0.1440.900" timestamp="1588331097989" />
-    <state x="303" y="51" key="CommitChangelistDialog2" timestamp="1588516686807">
+    <state x="303" y="51" key="CommitChangelistDialog2" timestamp="1588517424961">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="303" y="51" key="CommitChangelistDialog2/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588516686807" />
+    <state x="303" y="51" key="CommitChangelistDialog2/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588517424961" />
     <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1588515525717">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -152,10 +173,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588515525716" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1588516691476">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1588517426490">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588516691476" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588517426490" />
     <state x="402" y="214" width="635" height="472" key="find.popup" timestamp="1588514422465">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
