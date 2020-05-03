@@ -4,7 +4,7 @@ const vm = require("v-response");
 
 let router = express.Router();
 
-router.get('/failed-clinical-trials', (req, res) => {
+router.get('/', (req, res) => {
     Article.find().sort({ _id: -1 })
         .then(found => {
             if (!found) {
