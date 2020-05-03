@@ -8,7 +8,7 @@ require('dotenv').config();
 const articles = require('./routes/articlesRoute.js');
 
 const MONGODB_URI = process.env.DB_URL;
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4000;
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connection.on('connected', () => {
@@ -37,3 +37,7 @@ app.use((req, res, next) => {
 
 
 app.use('/', articles);
+
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
+}
