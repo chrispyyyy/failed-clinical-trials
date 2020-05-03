@@ -6,14 +6,13 @@ const vm = require("v-response");
 require('dotenv').config();
 
 const articles = require('./routes/articlesRoute.js');
-
-const MONGODB_URI = process.env.DB_URL;
 const PORT = process.env.PORT || 4000;
 
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+
 mongoose.connection.on('connected', () => {
     app.listen(PORT, vm.log("listing on port", PORT));
-    console.log('Connected to MongoDB', MONGODB_URI);
+    console.log('Connected to MongoDB', process.env.MONGODB_URI);
 });
 mongoose.connection.on('error', (error) => {
     console.log(error);

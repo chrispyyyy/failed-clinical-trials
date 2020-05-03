@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ee69624-d52a-4951-bf8c-ab59e5bed22a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/actions/articlesActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/actions/articlesActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/articlesRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/articlesRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +58,7 @@
       <updated>1588328890279</updated>
       <workItem from="1588328892137" duration="6401000" />
       <workItem from="1588499830333" duration="4033000" />
-      <workItem from="1588505180616" duration="7855000" />
+      <workItem from="1588505180616" duration="8704000" />
     </task>
     <task id="LOCAL-00001" summary="Add pagination">
       <created>1588511349694</created>
@@ -84,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588512627592</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="reconfigure routes">
+      <created>1588513733608</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588513733608</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,7 +98,8 @@
     <MESSAGE value="Add pagination" />
     <MESSAGE value="remove import" />
     <MESSAGE value="add production" />
-    <option name="LAST_COMMIT_MESSAGE" value="add production" />
+    <MESSAGE value="reconfigure routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="reconfigure routes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588331841546">
@@ -102,10 +107,10 @@
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588331841546" />
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-2560.60.2560.983@0.0.1440.900" timestamp="1588331097989" />
-    <state x="303" y="51" key="CommitChangelistDialog2" timestamp="1588512627487">
+    <state x="303" y="51" key="CommitChangelistDialog2" timestamp="1588513733459">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="303" y="51" key="CommitChangelistDialog2/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588512627487" />
+    <state x="303" y="51" key="CommitChangelistDialog2/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588513733459" />
     <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1588334638804">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -122,14 +127,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588334638802" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1588512629198">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1588513747084">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588512629198" />
-    <state x="402" y="214" width="635" height="472" key="find.popup" timestamp="1588513676985">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588513747084" />
+    <state x="402" y="214" width="635" height="472" key="find.popup" timestamp="1588514422465">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="402" y="214" width="635" height="472" key="find.popup/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588511433685" />
+    <state x="402" y="214" width="635" height="472" key="find.popup/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588514422465" />
     <state x="402" y="214" width="635" height="472" key="find.popup/0.0.1440.900/-2560.60.2560.1057@0.0.1440.900" timestamp="1588513676985" />
     <state x="402" y="214" width="635" height="472" key="find.popup/0.0.1440.900/-2560.60.2560.983@0.0.1440.900" timestamp="1588331025412" />
   </component>
