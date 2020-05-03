@@ -10,21 +10,10 @@ const articles = require('./routes/articlesRoute.js');
 const MONGODB_URI = process.env.DB_URL;
 const PORT = process.env.PORT || 5000;
 
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connection.on('connected', () => {
     app.listen(PORT, vm.log("listing on port", PORT));
     console.log('Connected to MongoDB', MONGODB_URI);
-    mongoose.connection.db.collection('articles', function(err, docs) {
-        // Check for error
-        if(err) return console.log(err);
-        // Walk through the cursor
-        docs.find().each(function(err, doc) {
-            // Check for error
-            if(err) return console.err(err);
-            // Log document
-            console.log(doc);
-        })
-    });
 });
 mongoose.connection.on('error', (error) => {
     console.log(error);

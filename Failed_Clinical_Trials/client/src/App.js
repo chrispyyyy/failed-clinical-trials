@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route  } from 'react-router-dom';
 import { Redirect } from 'react-router';
-
 import Home from './containers/Home/Home';
 import NavigationBar from './containers/NavigationBar/NavigationBar';
 

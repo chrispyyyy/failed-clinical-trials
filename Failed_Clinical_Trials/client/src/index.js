@@ -8,6 +8,7 @@ import thunk from 'redux-thunk';
 import {createLogger} from 'redux-logger';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { createStore, applyMiddleware, combineReducers } from 'redux';
+import 'bootstrap/dist/css/bootstrap.css';
 import articlesReducer from './store/reducers/articlesReducer';
 
 // import registerServiceWorker from './registerServiceWorker';

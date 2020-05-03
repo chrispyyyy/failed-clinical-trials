@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ee69624-d52a-4951-bf8c-ab59e5bed22a" name="Default Changelist" comment="" />
+    <list default="true" id="5ee69624-d52a-4951-bf8c-ab59e5bed22a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Articles/Articles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Pagination/Pagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Article/Article.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Articles/Article.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Article/Article.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/containers/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/containers/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/actions/articlesActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/actions/articlesActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/articlesRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/articlesRoute.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1bIoIlLE1m2QKHMrFy2nai7VI7l" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,6 +35,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="13.9.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -50,6 +71,7 @@
       <updated>1588328890279</updated>
       <workItem from="1588328892137" duration="6401000" />
       <workItem from="1588499830333" duration="4033000" />
+      <workItem from="1588505180616" duration="5487000" />
     </task>
     <servers />
   </component>
@@ -78,10 +100,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588334638802" />
-    <state x="402" y="214" width="635" height="472" key="find.popup" timestamp="1588502552383">
+    <state x="402" y="214" width="635" height="472" key="find.popup" timestamp="1588506509266">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="402" y="214" width="635" height="472" key="find.popup/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588502552383" />
+    <state x="402" y="214" width="635" height="472" key="find.popup/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588506509266" />
     <state x="402" y="214" width="635" height="472" key="find.popup/0.0.1440.900/-2560.60.2560.983@0.0.1440.900" timestamp="1588331025412" />
   </component>
 </project>

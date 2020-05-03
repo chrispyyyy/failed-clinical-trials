@@ -1,17 +1,26 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { connect, useDispatch } from "react-redux";
 import { getArticlesAsync } from "../../store/actions/articlesActions";
 import "./Home.css";
 import { articlesSelector } from "../../selectors/articlesSelector";
-import Loader from "react-loader-spinner";
 import { articlesLoadingSelector } from "../../selectors/articlesLoadingSelector";
+import Articles from "../../components/Articles/Articles";
+import Pagination from "../../components/Pagination/Pagination";
 
 const Home = ({ articles, articlesLoading }) => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [articlesPerPage] = useState(10);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getArticlesAsync());
   }, []);
 
+  const indexOfLastArticle = currentPage * articlesPerPage;
+  const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
+  const currentArticles = articles.slice(indexOfFirstArticle, indexOfLastArticle);
+  const paginate = (pageNumber) => {
+      setCurrentPage(pageNumber);
+  };
   return (
     <div className="container">
       <br />
@@ -20,24 +29,8 @@ const Home = ({ articles, articlesLoading }) => {
       </div>
       <br />
       <div>
-        {articlesLoading && (
-          <Loader
-              style={{marginLeft:500}}
-            type="Puff"
-            color="#00BFFF"
-            height={100}
-            width={100}
-            timeout={1000} //3 secs
-          />
-        )}
-        {articles.length > 0 &&
-          articles.map(article => {
-            return (
-              <section className="jumbotron">
-                <div className="Articles">{article.medicinalProduct}</div>
-              </section>
-            );
-          })}
+        <Articles articles={currentArticles} articlesLoading={articlesLoading}/>
+        <Pagination articlesPerPage={articlesPerPage} totalArticles={articles.length} paginate={paginate}/>
       </div>
     </div>
   );
