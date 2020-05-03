@@ -39,4 +39,7 @@ app.use('/', articles);
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
+    app.get('*', (req, res) => {
+        res.sendFile(path.join('client', 'build', 'index.html'));
+    });
 }
