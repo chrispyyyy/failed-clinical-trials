@@ -1,0 +1,29 @@
+{
+    "name": "failed-clinical-trials",
+    "version": "1.0.0",
+    "description": "A failed clinical trials app for UMFCD",
+    "engines": {
+        "node": "13.9.0"
+    },
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "heroku-postbuild": "cd client && yarn install && yarn build",
+        "client": "cd client && yarn start",
+        "server": "nodemon app.js"
+    },
+    "author": "Cristina Sirb",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.18.2",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "jsonwebtoken": "^8.3.0",
+        "mongoose": "^5.9.2",
+        "v-response": "^1.1.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.2"
+    }
+}
