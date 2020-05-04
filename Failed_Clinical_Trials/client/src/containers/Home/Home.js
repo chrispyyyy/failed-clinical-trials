@@ -7,8 +7,9 @@ import { articlesLoadingSelector } from "../../selectors/articlesLoadingSelector
 import Articles from "../../components/Articles/Articles";
 import Pagination from "../../components/Pagination/Pagination";
 import { searchValueSelector } from "../../selectors/searchValueSelector";
+import { filteredArticlesSelector } from "../../selectors/filteredArticlesSelector";
 
-const Home = ({ articles, articlesLoading, searchValue }) => {
+const Home = ({ articles, articlesLoading, searchValue, filteredArticles }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [articlesPerPage] = useState(10);
   const dispatch = useDispatch();
@@ -37,6 +38,7 @@ const Home = ({ articles, articlesLoading, searchValue }) => {
           articles={currentArticles}
           articlesLoading={articlesLoading}
           searchValue={searchValue}
+          filteredArticles={filteredArticles}
         />
         <Pagination
           articlesPerPage={articlesPerPage}
@@ -51,7 +53,8 @@ const Home = ({ articles, articlesLoading, searchValue }) => {
 const mapStateToProps = state => ({
   articles: articlesSelector(state),
   articlesLoading: articlesLoadingSelector(state),
-  searchValue: searchValueSelector(state)
+  searchValue: searchValueSelector(state),
+  filteredArticles: filteredArticlesSelector(state)
 });
 
 export default connect(mapStateToProps)(Home);

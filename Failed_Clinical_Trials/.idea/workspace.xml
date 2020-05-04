@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ee69624-d52a-4951-bf8c-ab59e5bed22a" name="Default Changelist" comment="add search">
+    <list default="true" id="5ee69624-d52a-4951-bf8c-ab59e5bed22a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/selectors/filteredArticlesSelector.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Article/Article.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Article/Article.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Articles/Articles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Articles/Articles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Search/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Search/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/containers/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/containers/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/reducers/articlesReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/reducers/articlesReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/articlesRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/articlesRoute.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +70,8 @@
       <updated>1588328890279</updated>
       <workItem from="1588328892137" duration="6401000" />
       <workItem from="1588499830333" duration="4033000" />
-      <workItem from="1588505180616" duration="16312000" />
+      <workItem from="1588505180616" duration="16418000" />
+      <workItem from="1588613059372" duration="7609000" />
     </task>
     <task id="LOCAL-00001" summary="Add pagination">
       <created>1588511349694</created>
@@ -133,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588521347800</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add search">
+      <created>1588524981189</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1588524981190</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,15 +180,19 @@
     <option name="LAST_COMMIT_MESSAGE" value="add search" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="432" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588619054163">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="432" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1588619054163" />
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588331841546">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588331841546" />
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-2560.60.2560.983@0.0.1440.900" timestamp="1588331097989" />
-    <state x="303" y="51" key="CommitChangelistDialog2" timestamp="1588524316249">
+    <state x="303" y="51" key="CommitChangelistDialog2" timestamp="1588524981096">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="303" y="51" key="CommitChangelistDialog2/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588518591335" />
+    <state x="303" y="51" key="CommitChangelistDialog2/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588524981096" />
     <state x="303" y="51" key="CommitChangelistDialog2/0.0.1440.900/-2560.60.2560.1057@0.0.1440.900" timestamp="1588521347673" />
     <state x="303" y="51" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1588524316249" />
     <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1588515525717">
@@ -190,15 +211,20 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588515525716" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1588518594365">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1588524988898">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588518594365" />
-    <state x="402" y="214" width="635" height="472" key="find.popup" timestamp="1588514422465">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588524988898" />
+    <state x="402" y="214" width="635" height="472" key="find.popup" timestamp="1588615852280">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="402" y="214" width="635" height="472" key="find.popup/0.0.1440.900/-2560.37.2560.1080@0.0.1440.900" timestamp="1588514422465" />
     <state x="402" y="214" width="635" height="472" key="find.popup/0.0.1440.900/-2560.60.2560.1057@0.0.1440.900" timestamp="1588513676985" />
     <state x="402" y="214" width="635" height="472" key="find.popup/0.0.1440.900/-2560.60.2560.983@0.0.1440.900" timestamp="1588331025412" />
+    <state x="402" y="214" width="635" height="472" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1588615852280" />
+    <state x="450" y="349" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1588614026724">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="450" y="349" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1440.900@0.0.1440.900" timestamp="1588614026724" />
   </component>
 </project>
