@@ -30,7 +30,7 @@ const Home = ({ articles, articlesLoading, searchValue, filteredArticles }) => {
     <div className="container">
       <br />
       <div className="Header">
-        <h1 style={{ display: "inline-block" }}>All Articles</h1>
+        <h1 style={{ display: "inline-block" }}>All trials</h1>
       </div>
       <br />
       <div>

@@ -1,18 +1,26 @@
 import React from "react";
 import { connect } from "react-redux";
 import { searchValueAction } from "../../store/actions/articlesActions";
+import InputLabel from "@material-ui/core/InputLabel";
+import Input from "@material-ui/core/Input";
+import InputAdornment from "@material-ui/core/InputAdornment";
+import SearchIcon from "@material-ui/icons/Search";
 
 const Search = ({ articles, onChangeSearchValue, searchValue }) => {
-  console.log(searchValue);
   return (
     <div style={{marginBottom:30}}>
-      <input
-        style={{ width: 500 }}
-        placeholder="Search for medicinal products..."
-        type="text"
-        value={searchValue || ""}
-        onChange={onChangeSearchValue}
-      />
+        <InputLabel htmlFor="input-with-icon-adornment">Search for medicinal products</InputLabel>
+        <Input
+            type="outlined"
+            value={searchValue || ""}
+            onChange={onChangeSearchValue}
+            id="input-with-icon-adornment"
+            startAdornment={
+                <InputAdornment position="start">
+                    <SearchIcon />
+                </InputAdornment>
+            }
+        />
     </div>
   );
 };
